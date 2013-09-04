@@ -1,0 +1,57 @@
+.container {
+  margin: 0 auto;  
+  width: 720px;
+}
+
+nav ul li.top_level {
+  z-index: 1;
+  border-right: white 1px solid;
+}
+
+li {
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  padding-top: 8px;
+  height: 25px;
+  background-color: lightgray;
+  float: left;
+}
+
+li.top_level:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+li.top_level:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+nav ul ul {
+  display: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav {
+  margin: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0px;
+}
+
+.submenu li {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
